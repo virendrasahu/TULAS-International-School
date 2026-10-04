@@ -13,7 +13,7 @@ The project focuses on creating a high-converting digital experience while prese
 
 ## 🌐 Project Links
 
-* **Live Demo:** `Add your deployed Vercel URL`
+* **Live Demo:** [`https://tulas-international-school-five.vercel.app/`](https://tulas-international-school-five.vercel.app/)
 * **GitHub Repository:** `Add your GitHub repository URL`
 * **Original Website:** [Tulas International School](https://tis.edu.in/?utm_source=chatgpt.com)
 
