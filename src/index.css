@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-tis-red: #B90124;
+  --color-tis-red-dark: #8C001B;
+  --color-tis-red-light: #E52B4E;
+  --color-tis-teal: #60BAB1;
+  --color-tis-teal-dark: #007A83;
+  --color-tis-teal-light: #90CCD0;
+  --color-tis-gold: #C09D59;
+  --color-tis-gold-light: #DBC79F;
+  --color-tis-gold-dark: #997A37;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-heading: "Outfit", "Plus Jakarta Sans", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B90124;
+}
+
+/* Hide native scrollbar for horizontal scroll views */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Cursor default cursor hide on desktop if cursor enabled */
+@media (min-width: 1024px) {
+  .has-custom-cursor,
+  .has-custom-cursor button,
+  .has-custom-cursor a {
+    cursor: default;
+  }
+}
